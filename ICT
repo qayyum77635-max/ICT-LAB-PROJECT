@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdul Qayyum | Portfolio & Doctor Booking</title>
+
+<style>
+/* ===== Reset ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ===== Body ===== */
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f6f9;
+  color:#1f2937;
+  line-height:1.6;
+}
+
+/* ===== Navigation ===== */
+nav{
+  background:#0f172a;
+  padding:15px;
+  text-align:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  margin:8px;
+  padding:10px 14px;
+  border-radius:8px;
+  font-weight:bold;
+}
+nav a:hover{
+  background:#2563eb;
+}
+
+/* ===== Sections ===== */
+section{
+  padding:40px 10%;
+}
+.card{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  margin-bottom:40px;
+}
+
+/* ===== Portfolio ===== */
+.profile{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+}
+.profile img{
+  width:180px;
+  height:220px;
+  border-radius:18px;
+  border:4px solid #2563eb;
+  object-fit:cover;
+}
+.profile h1{
+  font-size:34px;
+}
+.badge{
+  display:inline-block;
+  background:#e0f2fe;
+  color:#0369a1;
+  padding:6px 12px;
+  border-radius:20px;
+  font-weight:bold;
+  margin-top:8px;
+  margin-right:6px;
+}
+
+/* ===== Doctor Section ===== */
+.doctor-title{
+  font-size:28px;
+  color:#2563eb;
+}
+.info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:12px;
+  margin-top:15px;
+}
+.info div{
+  background:#f8fafc;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #e2e8f0;
+}
+
+/* ===== Form ===== */
+form{
+  margin-top:20px;
+}
+label{
+  font-weight:bold;
+  display:block;
+  margin-top:12px;
+}
+input, select, textarea{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #cbd5e1;
+}
+button{
+  margin-top:15px;
+  padding:12px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+button:hover{
+  background:#1d4ed8;
+}
+
+/* ===== Footer ===== */
+footer{
+  text-align:center;
+  padding:20px;
+  color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#doctor1">Dr. Qaiser</a>
+  <a href="#doctor2">Dr. Ali Imran</a>
+  <a href="#doctor3">Dr. Haseeb Asif</a>
+</nav>
+
+<!-- ===== Portfolio Page ===== -->
+<section id="portfolio">
+  <div class="card profile">
+    <img src="QAYYUM.jpg"alt="Abdul Qayyum">
+    <div>
+      <h1>Abdul Qayyum</h1>
+      <p><b>Front End Developer</b></p>
+      <p>Expert in building responsive websites using HTML & CSS.</p>
+      <span class="badge">HTML Expert</span>
+      <span class="badge">CSS Expert</span>
+      <span class="badge">Responsive Design</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Doctor 1 ===== -->
+<section id="doctor1">
+  <div class="card">
+    <h2 class="doctor-title">Dr. Qaiser</h2>
+    <p><b>Liver Specialist</b></p>
+
+    <div class="info">
+      <div><b>Timing:</b> 5:00 PM – 9:00 PM</div>
+      <div><b>Hospital:</b> City Care Hospital</div>
+      <div><b>Fee:</b> PKR 2000</div>
+      <div><b>Services:</b> Hepatitis, Liver Checkup</div>
+    </div>
+
+    <form>
+      <h3>Book Appointment</h3>
+      <label>Name</label>
+      <input type="text" required>
+      <label>Phone</label>
+      <input type="tel" required>
+      <label>Date</label>
+      <input type="date" required>
+      <label>Message</label>
+      <textarea></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Doctor 2 ===== -->
+<section id="doctor2">
+  <div class="card">
+    <h2 class="doctor-title">Dr. Ali Imran</h2>
+    <p><b>Heart Specialist</b></p>
+
+    <div class="info">
+      <div><b>Timing:</b> 4:00 PM – 8:00 PM</div>
+      <div><b>Hospital:</b> Pulse Heart Center</div>
+      <div><b>Fee:</b> PKR 2500</div>
+      <div><b>Services:</b> ECG, BP, Heart Check</div>
+    </div>
+
+    <form>
+      <h3>Book Appointment</h3>
+      <label>Name</label>
+      <input type="text" required>
+      <label>Phone</label>
+      <input type="tel" required>
+      <label>Date</label>
+      <input type="date" required>
+      <label>Message</label>
+      <textarea></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Doctor 3 ===== -->
+<section id="doctor3">
+  <div class="card">
+    <h2 class="doctor-title">Dr. Haseeb Asif</h2>
+    <p><b>Brain Specialist</b></p>
+
+    <div class="info">
+      <div><b>Timing:</b> 6:00 PM – 10:00 PM</div>
+      <div><b>Hospital:</b> Neuro Plus Clinic</div>
+      <div><b>Fee:</b> PKR 3000</div>
+      <div><b>Services:</b> Migraine, Memory, Seizures</div>
+    </div>
+
+    <form>
+      <h3>Book Appointment</h3>
+      <label>Name</label>
+      <input type="text" required>
+      <label>Phone</label>
+      <input type="tel" required>
+      <label>Date</label>
+      <input type="date" required>
+      <label>Message</label>
+      <textarea></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © 2026 Abdul Qayyum | HTML & CSS Project
+</footer>
+
+</body>
+</html>
